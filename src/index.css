@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Nunito:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Nunito", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-body: "Nunito", sans-serif;
+  --font-heading: "Playfair Display", serif;
+  --font-quote: "Lora", serif;
+
+  --color-bg-primary: #FFF5F5;
+  --color-bg-secondary: #FEF0F0;
+  --color-bg-card: #FFFFFF;
+  --color-bg-dark: #2D0A0A;
+  --color-bg-dark-secondary: #3D1010;
+
+  --color-red-primary: #C0392B;
+  --color-red-dark: #96281B;
+  --color-red-light: #E74C3C;
+  --color-red-pale: #FDECEA;
+
+  --color-pink-primary: #E8A0A0;
+  --color-pink-light: #F5C6C6;
+  --color-pink-pale: #FDF0F0;
+  --color-pink-dark: #C07070;
+
+  --color-text-primary: #2D0A0A;
+  --color-text-secondary: #5C2020;
+  --color-text-muted: #9B7070;
+  --color-text-light: #FFF5F5;
+}
+
+@layer base {
+  body {
+    @apply bg-bg-primary text-text-primary font-sans antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-bold text-red-primary;
+  }
+}
+
+@layer utilities {
+  /* CHECKER VARIANT 1 — LIGHT */
+  .checker-light {
+    background-image: repeating-conic-gradient(#F5C6C6 0% 25%, #FFFFFF 0% 50%);
+    background-size: 24px 24px;
+  }
+
+  /* CHECKER VARIANT 2 — BOLD */
+  .checker-bold {
+    background-image: repeating-conic-gradient(#C0392B 0% 25%, #F5C6C6 0% 50%);
+    background-size: 16px 16px;
+  }
+
+  /* CHECKER VARIANT 3 — DARK */
+  .checker-dark {
+    background-image: repeating-conic-gradient(#8B1A1A 0% 25%, #E88080 0% 50%);
+    background-size: 20px 20px;
+  }
+
+  /* CHECKER VARIANT 4 — MICRO */
+  .checker-micro {
+    background-image: repeating-conic-gradient(#C0392B 0% 25%, #F5C6C6 0% 50%);
+    background-size: 8px 8px;
+  }
+
+  /* CHECKER VARIANT 5 — BORDER STRIPE */
+  .checker-stripe {
+    height: 8px;
+    background-image: repeating-conic-gradient(#C0392B 0% 25%, #F5C6C6 0% 50%);
+    background-size: 16px 16px;
+  }
+
+  .folk-border {
+    mask-image: radial-gradient(circle at 10px 0, transparent 10px, black 11px);
+    mask-size: 20px 100%;
+  }
+
+  .text-shadow-sm {
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+  }
+}
