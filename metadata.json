@@ -1,0 +1,8 @@
+{
+  "name": "Kuchnia Po Naszemu",
+  "description": "Domowe jedzenie z sercem. Codziennie nowe zestawy dnia, tradycyjne smaki i ciepła atmosfera.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": []
+}
