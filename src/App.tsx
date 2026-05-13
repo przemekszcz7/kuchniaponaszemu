@@ -364,7 +364,7 @@ export default function App() {
             </div>
 
             <div className="lg:w-1/2">
-              <div className="h-full min-h-[450px] rounded-3xl overflow-hidden border-2 border-pink-light shadow-inner relative group">
+              <div className="h-[350px] md:h-full md:min-h-[450px] rounded-3xl overflow-hidden border-2 border-pink-light shadow-inner relative group">
                 <iframe 
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2432.0896671447113!2d17.073254577115588!3d52.44129044205348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47045e9ab838a5cd%3A0xb5298de06ef9824f!2sSwarz%C4%99dzka%2021%2C%2062-006%20Gruszczyn!5e0!3m2!1spl!2spl!4v1778664968114!5m2!1spl!2spl" 
                   width="100%" 
